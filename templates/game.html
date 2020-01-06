@@ -4,41 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>welcome to tiktactoe game session</title>
-    <style>
-      table {
-        border-collapse: collapse;
-      }
-      td {
-        border: 2px solid #000;
-        width: 200px;
-        height: 200px;
-        font-size: 2rem;
-        text-align: center;
-      }
-    </style>
+    <title>this is deployed !!</title>
   </head>
   <body>
-    <table>
-      {% for row in range(3) %}
-      <tr>
-        {% for col in range(3) %}
-        <td>
-          {% if game[row][col] %} {{ game[row][col] }} {% else %}
-          <a href="{{ url_for('action', row=row, col=col) }}">
-            play {{ mycheck }} here
-          </a>
-          {% endif %}
-        </td>
-        {% endfor %}
-      </tr>
-      {% endfor %}
-    </table>
-
-    <button>
-      <a href=" {{ url_for('replay') }}">
-        reset
-      </a>
-    </button>
+    <h1>awesome! i feel soaring in the sky !!</h1>
   </body>
 </html>
